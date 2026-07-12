@@ -12,7 +12,10 @@ Machine Learning and Flask.
 
 ---
 
+<<<<<<< HEAD
 ##  Tech Stack
+=======
+## Tech Stack
 - Python
 - Pandas
 - NumPy
@@ -22,12 +25,16 @@ Machine Learning and Flask.
 
 ---
 
+<<<<<<< HEAD
 ## Dataset
+=======
+##  Dataset
 TMDB / Kaggle Movie Dataset  
 
 
 ---
 
+<<<<<<< HEAD
 ##  How to Run Locally
 
 ```bash
