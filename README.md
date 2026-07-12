@@ -1,18 +1,18 @@
-# 🎬 Movie Recommendation System
+# Movie Recommendation System
 
 A content-based movie recommendation system built using
 Machine Learning and Flask.
 
 ---
 
-## 🚀 Features
+##  Features
 - Recommend movies based on similarity
 - Flask web interface
 - Fast and accurate recommendations
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 - Python
 - Pandas
 - NumPy
@@ -22,13 +22,13 @@ Machine Learning and Flask.
 
 ---
 
-## 📊 Dataset
+##  Dataset
 TMDB / Kaggle Movie Dataset  
 
 
 ---
 
-## ▶️ How to Run Locally
+## How to Run Locally
 
 ```bash
 pip install -r requirements.txt
