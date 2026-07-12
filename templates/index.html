@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Recommendation System</title>
+    <link rel="stylesheet" href="/static/style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <h2 class="subtitle">Find Movies similar to your favorite one</h2>
+        <form method="POST" action="/recommend">
+             <input 
+            type="text"
+            name="movie"
+            list="movies"
+            placeholder="Search movie name..."
+            required
+        >
+
+        <datalist id="movies">
+            {% for m in movie_list %}
+                <option value="{{ m }}">
+            {% endfor %}
+        </datalist>
+
+        <button type="submit">Recommend</button>
+        </form>
+
+         {% if recommendations %}
+        <h3>Recommended Movies for: {{ selected_movie }}</h3>
+
+        <div class="movie-grid">
+            {% for name, poster, rating, desc in recommendations %}
+                <div class="movie-card">
+                    <img src="{{ poster }}" alt="{{ name }}">
+                    <div class="card-body">
+                        <h4>{{ name }}</h4>
+                        <p class="rating">IMDb: {{ rating }}</p>
+                        <p class="overview">{{ desc[:120] }}...</p>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    {% endif %}
+    </div>
+    
+</body>
+</html>

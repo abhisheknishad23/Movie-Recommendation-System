@@ -1,0 +1,50 @@
+# virtual environment
+.venv/
+env/
+
+# python cache
+__pycache__/
+
+# jupyter
+.ipynb_checkpoints/
+
+# large files
+models/*.pkl
+data/*.csv
+
+flask_backend/similarity.pkl
+
+
+# environment variables
+.env
+
+
+# Python environment files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.env
+.venv
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+
+*.pkl
+*.h5
+*.joblib
+
+# OS related files
+.DS_Store
+Thumbs.db
+
+# Flask/Flask-Session files
+instance/
+.webassets-cache
